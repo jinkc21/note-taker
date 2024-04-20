@@ -1,6 +1,4 @@
 const api = require("express").Router();
-// const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
-// const uuid = require('../helpers/uuid');
 const { v4: uuidv4 } = require("uuid");
 const path = require("path");
 const fs = require("fs");
@@ -38,11 +36,6 @@ api.delete("/notes/:id", (req, res) => {
   );
   const newNotes = notes.filter((note) => note.id !== noteID);
 
-  // for (var i = 0; i < notes.length; i++) {
-  //   if (notes[i].id === noteID) {
-  //     notes.splice(i, 1);
-  //   }
-  // }
   fs.writeFileSync(
     path.join(__dirname, "../db/db.json"),
     JSON.stringify(newNotes)
