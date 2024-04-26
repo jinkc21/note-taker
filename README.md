@@ -41,8 +41,11 @@ https://expressjs.com/en/guide/routing.html#express-router
 Heroku was used to deploy this application. 
 https://devcenter.heroku.com/articles/git#creating-a-heroku-remote
 
-Erik Hirsch assisted with writing some of the router methods.
+Erik Hirsch assisted with writing the router methods.
 ehirsch@instructors.2u.com
+
+UUID was used to generate IDs.
+https://www.npmjs.com/package/uuid
 
 ## License
 
